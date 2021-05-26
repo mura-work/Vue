@@ -7,19 +7,7 @@
   <body>
     <div id="app">
       <p>
-        <input type="text" v-model="message">
-      </p>
-      <p>
-        {{message}}
-      </p>
-      <p>
-        {{count}}
-      </p>
-      <p>
-        {{user.prefecture}}
-      </p>
-      <p>
-        {{colors[1]}}
+        <input type="text" v-bind:value="message">
       </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
