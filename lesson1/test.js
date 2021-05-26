@@ -1,6 +1,10 @@
 var app = new Vue({
   el: '#app',
   data: {
-    toggle: true
+    user: {
+      lastname: 'taro',
+      firstname: 'yamada',
+      age: 28
+    }
   }
 })
