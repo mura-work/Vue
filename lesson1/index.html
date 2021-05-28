@@ -6,7 +6,9 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <div id="mount"></div>
+    <div id="app">
+      <employees-list v-bind:employees-name='firstname'></employees-list>
+    </div>
     <script src="test.js"></script>
   </body>
 </html>

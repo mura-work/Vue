@@ -1,10 +1,13 @@
-const mailAddress = Vue.extend({
-  template: '<p>{{firstName}} - {{lastName}} @ {{domain}}</p>',
-  data: function () {
-    return {
-    firstName: 'taro', lastName: 'tanaka', alias: 'sample.com'
+Vue.component('employees-list', {
+  props: {
+    employeesName: {
+      type: String
     }
-  }
+  },
+  template: `<p>名：{{employeesName}}</p>`
 })
 
-new mailAddress().$mount("#mount")
+const vm = new Vue({
+  el: '#app',
+  data: {firstname: '太郎'}
+})
