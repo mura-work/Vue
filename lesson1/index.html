@@ -6,13 +6,11 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <div id="app">
-      <p v-if="isIf == '1'">if</p>
-      <p v-else-if="isIf == '2'">elsif</p>
-      <p v-else>else</p>
-      <p v-show="isShow == '3'">show</p>
-      <p></p>
-    </div>
+    <ul id="list">
+      <li v-for="(item,index) in items" :key="item.message">
+        {{index}}{{item.message}}
+      </li>
+    </ul>
     <script src="test.js"></script>
   </body>
 </html>

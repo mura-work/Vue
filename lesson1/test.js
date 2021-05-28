@@ -1,7 +1,9 @@
 const vm = new Vue({
-  el: '#app',
+  el: "#list",
   data: {
-    isIf: '3',
-    isShow: '3'
+    items: [
+      {message: 'list1'},
+      {message: 'list2'}
+    ]
   }
 })
