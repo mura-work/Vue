@@ -1,11 +1,10 @@
-Vue.component(`template-sample`, {
-  template: `<ul>
-              <li>apple</li>
-              <li>orange</li>
-              <li>banana</li>
-            </ul>`
+const mailAddress = Vue.extend({
+  template: '<p>{{firstName}} - {{lastName}} @ {{domain}}</p>',
+  data: function () {
+    return {
+    firstName: 'taro', lastName: 'tanaka', alias: 'sample.com'
+    }
+  }
 })
 
-new Vue({
-  el: '#app'
-})
+new mailAddress().$mount("#mount")
