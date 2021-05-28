@@ -6,8 +6,12 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <div id="app">
-      <employees-list v-bind:employees-name='firstname'></employees-list>
+    <div id="counter-anchor">
+      <div v-for="counter in counters">
+        {{counter.name}};
+        <parent-count-button v-on:increment="plusCount()" ></parent-count-button>
+      </div>
+      <p>{{total}}回</p>
     </div>
     <script src="test.js"></script>
   </body>
