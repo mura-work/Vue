@@ -1,9 +1,16 @@
 const vm = new Vue({
-  el: "#list",
+  el: '#app',
   data: {
-    items: [
-      {message: 'list1'},
-      {message: 'list2'}
-    ]
+    inputText: "",
+    message: "",
+  },
+  methods: {
+    lengthCheck: function(){
+      if(this.inputText.length >= 6 && this.inputText.length <= 8){
+        this.message = "OK"
+      }else {
+        this.message = "NG"
+      }
+    }
   }
 })
