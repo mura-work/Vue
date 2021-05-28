@@ -1,6 +1,11 @@
 const vm = new Vue({
   el: "#app",
   data: {
-    color_data: 'color: blue'
+    num: 1000000
+  },
+  filters: {
+    filterNum: function(val){
+      return "¥¥" + val.toLocaleString()
+    }
   }
 })
