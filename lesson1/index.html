@@ -6,7 +6,11 @@
   </head>
   <body>
     <div id="app">
-      {{message}}
+      <div v-for="emp in employees_data">
+        <p>{{emp.name}}</p>
+        <p>{{emp.age}}</p>
+        <p>{{emp.department}}</p>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="test.js"></script>
