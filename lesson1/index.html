@@ -5,14 +5,10 @@
     <title>index</title>
   </head>
   <body>
-    <div id="app">
-      <div v-for="emp in employees_data">
-        <p>{{emp.name}}</p>
-        <p>{{emp.age}}</p>
-        <p>{{emp.department}}</p>
-      </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <div id="app">
+      <p v-bind:style="color_data">aaa</p>
+    </div>
     <script src="test.js"></script>
   </body>
 </html>
