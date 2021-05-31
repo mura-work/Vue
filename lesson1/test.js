@@ -1,6 +1,9 @@
-const vm = new Vue({
-  el: "#app",
-  data: {
-    message: "hello world"
+Vue.directive('input-focus', {
+  inserted: function(el){
+    el.focus()
   }
+})
+
+new Vue({
+  el: '#app'
 })
